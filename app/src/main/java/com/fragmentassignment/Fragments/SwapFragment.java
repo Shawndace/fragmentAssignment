@@ -53,7 +53,7 @@ public class SwapFragment extends Fragment implements View.OnClickListener{
         second = first - second;
         first = first - second;
 
-        tvResult.setText("After Swapping" + " first = " + first + ", second = " + second);
+        tvResult.setText("Swapping first with second" + " first = " + first + ", second = " + second);
 
     }
 }
