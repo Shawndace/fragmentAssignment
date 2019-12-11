@@ -35,9 +35,9 @@ public class SwapFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_swap, container, false);
 
-        etFirst = view.findViewById(R.id.etFirst);
-        etSecond = view.findViewById(R.id.etSecond);
-        tvResult = view.findViewById(R.id.tvResult);
+        etFirst = view.findViewById(R.id.etFirstSwap);
+        etSecond = view.findViewById(R.id.etSecondSwap);
+        tvResult = view.findViewById(R.id.tvResultSwap);
         btnSwapping = view.findViewById(R.id.btnSwapping);
 
         btnSwapping.setOnClickListener(this);

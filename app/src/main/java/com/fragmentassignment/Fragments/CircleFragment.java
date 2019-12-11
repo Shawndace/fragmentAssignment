@@ -35,7 +35,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_circle, container, false);
 
         etRadius = view.findViewById(R.id.etRadius);
-        tvResult = view.findViewById(R.id.tvResult);
+        tvResult = view.findViewById(R.id.tvResultCircle);
 
         btnAreaofCircle = view.findViewById(R.id.btnAreaofCircle);
 
@@ -45,10 +45,10 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        float radius = Integer.parseInt(etRadius.getText().toString());
+        float radius = Float.parseFloat(etRadius.getText().toString());
         float area = 3.14f * radius * radius;
 
-        tvResult.setText("Area of Circle: Rs." + area);
+        tvResult.setText("Area of Circle:" + area);
 
     }
 }

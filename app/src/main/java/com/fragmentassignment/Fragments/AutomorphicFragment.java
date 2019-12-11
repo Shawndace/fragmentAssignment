@@ -36,9 +36,9 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_automorphic, container, false);
 
-        etNumber = view.findViewById(R.id.etNumber);
+        etNumber = view.findViewById(R.id.etNumberAutoMorphic);
         btnAutoMorphic = view.findViewById(R.id.btnAutoMorphic);
-        tvResult = view.findViewById(R.id.tvResult);
+        tvResult = view.findViewById(R.id.tvResultAutomorphic);
 
         btnAutoMorphic.setOnClickListener(this);
         return view;
@@ -64,10 +64,10 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
         }
 
         if(s%c==a)
-            tvResult.setText("The Number is AutoMorphic");
+            tvResult.setText("The Number is Automorphic");
 
         else
-            tvResult.setText("The Number is Not AutoMorphic");
+            tvResult.setText("The Number is Not Automorphic");
 
 
     }

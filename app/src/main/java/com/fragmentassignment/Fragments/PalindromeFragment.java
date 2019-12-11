@@ -35,9 +35,9 @@ public class PalindromeFragment extends Fragment implements View.OnClickListener
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_palindrome, container, false);
 
-        etNumber = view.findViewById(R.id.etNumber);
+        etNumber = view.findViewById(R.id.etNumberPalindrome);
         btnPalindrome = view.findViewById(R.id.btnPalindrome);
-        tvResult = view.findViewById(R.id.tvResult);
+        tvResult = view.findViewById(R.id.tvResultPalindrome);
 
         btnPalindrome.setOnClickListener(this);
         return view;

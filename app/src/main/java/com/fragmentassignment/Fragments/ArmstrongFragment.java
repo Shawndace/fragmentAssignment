@@ -36,8 +36,8 @@ public class ArmstrongFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_armstrong, container, false);
 
-        etNumber = view.findViewById(R.id.etNumber);
-        tvResult = view.findViewById(R.id.tvResult);
+        etNumber = view.findViewById(R.id.etNumberArmstrong);
+        tvResult = view.findViewById(R.id.tvResultArmstrong);
         btnArmstrong = view.findViewById(R.id.btnArmstrong);
 
         btnArmstrong.setOnClickListener(this);

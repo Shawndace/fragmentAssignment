@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fragmentassignment.R;
 
@@ -39,7 +40,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
         etTime = view.findViewById(R.id.etTime);
         etRate = view.findViewById(R.id.etRate);
         btnSimpleInterest = view.findViewById(R.id.btnSimpleInterest);
-        tvResult = view.findViewById(R.id.tvResult);
+        tvResult = view.findViewById(R.id.tvResultSimpleInterest);
 
         btnSimpleInterest.setOnClickListener(this);
         return view;
@@ -47,12 +48,14 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 
 @Override
 public void onClick(View v) {
-        float principal = Integer.parseInt(etPrincipal.getText().toString());
-        float time = Integer.parseInt(etTime.getText().toString());
-        float rate = Integer.parseInt(etRate.getText().toString());
-        float simpleinterest = ((principal * time * rate) / 100);
+        float principal = Float.parseFloat(etPrincipal.getText().toString());
+        float time = Float.parseFloat(etTime.getText().toString());
+        float rate = Float.parseFloat(etRate.getText().toString());
+        float si = (principal * time * rate) / 100;
 
-        tvResult.setText("Simple Interest");
+//        Toast.makeText(getActivity(), "Simple intrest is :" + simpleintrest, Toast.LENGTH_SHORT).show();
+
+        tvResult.setText("Simple intrest is:" + si);
 
         }
         }
