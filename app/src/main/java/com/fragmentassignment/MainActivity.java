@@ -8,6 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.fragmentassignment.Fragments.ArmstrongFragment;
+import com.fragmentassignment.Fragments.AutomorphicFragment;
+import com.fragmentassignment.Fragments.CircleFragment;
+import com.fragmentassignment.Fragments.PalindromeFragment;
+import com.fragmentassignment.Fragments.SimpleInterestFragment;
 import com.fragmentassignment.Fragments.SwapFragment;
 import com.fragmentassignment.Fragments.armstrongFragment;
 import com.fragmentassignment.Fragments.automorphicFragment;
@@ -49,31 +54,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btnAreaofCircle:
 
-                circleFragment areaofCircle = new circleFragment();
+                CircleFragment areaofCircle = new CircleFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,areaofCircle);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnPalindrome:
 
-                palindromeFragment palindrome = new palindromeFragment();
+                PalindromeFragment palindrome = new PalindromeFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,palindrome);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnSimpleInterest:
 
-                simpleInterestFragment simpleInterest = new simpleInterestFragment();
+                SimpleInterestFragment simpleInterest = new SimpleInterestFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,simpleInterest);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnArmstrong:
 
-                armstrongFragment armstrong = new armstrongFragment();
+                ArmstrongFragment armstrong = new ArmstrongFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,armstrong);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnAutoMorphic:
 
-                automorphicFragment automorphic = new automorphicFragment();
+                AutomorphicFragment automorphic = new AutomorphicFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,automorphic);
                 fragmentTransaction.commit();
                 break;

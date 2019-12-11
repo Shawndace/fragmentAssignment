@@ -24,7 +24,7 @@ public class SwapFragment extends Fragment implements View.OnClickListener{
     private TextView tvResult;
 
 
-    public Swapping() {
+    public SwapFragment() {
         // Required empty public constructor
     }
 

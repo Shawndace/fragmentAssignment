@@ -17,15 +17,13 @@ import com.fragmentassignment.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class armstrongFragment extends Fragment implements View.OnClickListener{
-    private Button btnArmstrong;
+public class CircleFragment extends Fragment implements View.OnClickListener {
+    private Button btnAreaofCircle;
+    private EditText etRadius;
     private TextView tvResult;
-    private EditText etNumber;
 
 
-
-
-    public armstrongFragment() {
+    public CircleFragment() {
         // Required empty public constructor
     }
 
@@ -34,34 +32,23 @@ public class armstrongFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_armstrong, container, false);
+        View view = inflater.inflate(R.layout.fragment_circle, container, false);
 
-        etNumber = view.findViewById(R.id.etNumber);
+        etRadius = view.findViewById(R.id.etRadius);
         tvResult = view.findViewById(R.id.tvResult);
-        btnArmstrong = view.findViewById(R.id.btnArmstrong);
 
-        btnArmstrong.setOnClickListener(this);
+        btnAreaofCircle = view.findViewById(R.id.btnAreaofCircle);
+
+        btnAreaofCircle.setOnClickListener(this);
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        int c=0,a,temp;
-        int number = Integer.parseInt(etNumber.getText().toString());
+        float radius = Integer.parseInt(etRadius.getText().toString());
+        float area = 3.14f * radius * radius;
 
-        temp=number;
-        while(number>0)
-        {
-            a=number%10;
-            number=number/10;
-            c=c+(a*a*a);
-        }
-
-        if(temp==c)
-
-            tvResult.setText("Armstrong");
-        else
-            tvResult.setText("Not Armstrong");
+        tvResult.setText("Area of Circle: Rs." + area);
 
     }
 }

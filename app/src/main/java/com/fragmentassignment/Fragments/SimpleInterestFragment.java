@@ -17,14 +17,14 @@ import com.fragmentassignment.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class simpleInterestFragment extends Fragment implements View.OnClickListener {
+public class SimpleInterestFragment extends Fragment implements View.OnClickListener {
 
 private Button btnSimpleInterest;
 private EditText etPrincipal, etTime, etRate;
 private TextView tvResult;
 
 
-public SimpleInterest() {
+public SimpleInterestFragment() {
         // Required empty public constructor
         }
 

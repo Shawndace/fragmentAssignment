@@ -17,15 +17,15 @@ import com.fragmentassignment.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class automorphicFragment extends Fragment implements View.OnClickListener {
-
-    private Button btnAutoMorphic;
-    private EditText etNumber;
+public class ArmstrongFragment extends Fragment implements View.OnClickListener{
+    private Button btnArmstrong;
     private TextView tvResult;
+    private EditText etNumber;
 
 
 
-    public AutoMorphic() {
+
+    public ArmstrongFragment() {
         // Required empty public constructor
     }
 
@@ -34,41 +34,34 @@ public class automorphicFragment extends Fragment implements View.OnClickListene
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_automorphic, container, false);
+        View view = inflater.inflate(R.layout.fragment_armstrong, container, false);
 
         etNumber = view.findViewById(R.id.etNumber);
-        btnAutoMorphic = view.findViewById(R.id.btnAutoMorphic);
         tvResult = view.findViewById(R.id.tvResult);
+        btnArmstrong = view.findViewById(R.id.btnArmstrong);
 
-        btnAutoMorphic.setOnClickListener(this);
+        btnArmstrong.setOnClickListener(this);
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        int a,s,c=1;
+        int c=0,a,temp;
         int number = Integer.parseInt(etNumber.getText().toString());
 
-        a=number;
-
-        s=number*number;
-
-        while (number!=0)
-
+        temp=number;
+        while(number>0)
         {
-
-            c=c*10;
-
+            a=number%10;
             number=number/10;
-
+            c=c+(a*a*a);
         }
 
-        if(s%c==a)
-            tvResult.setText("The Number is AutoMorphic");
+        if(temp==c)
 
+            tvResult.setText("Armstrong");
         else
-            tvResult.setText("The Number is Not AutoMorphic");
-
+            tvResult.setText("Not Armstrong");
 
     }
 }

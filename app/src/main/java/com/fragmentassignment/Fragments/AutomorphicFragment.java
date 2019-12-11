@@ -17,14 +17,15 @@ import com.fragmentassignment.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class palindromeFragment extends Fragment implements View.OnClickListener {
-    private Button btnPalindrome;
+public class AutomorphicFragment extends Fragment implements View.OnClickListener {
+
+    private Button btnAutoMorphic;
     private EditText etNumber;
     private TextView tvResult;
 
 
 
-    public palindromeNo() {
+    public AutomorphicFragment() {
         // Required empty public constructor
     }
 
@@ -33,36 +34,41 @@ public class palindromeFragment extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_palindrome, container, false);
+        View view = inflater.inflate(R.layout.fragment_automorphic, container, false);
 
         etNumber = view.findViewById(R.id.etNumber);
-        btnPalindrome = view.findViewById(R.id.btnPalindrome);
+        btnAutoMorphic = view.findViewById(R.id.btnAutoMorphic);
         tvResult = view.findViewById(R.id.tvResult);
 
-        btnPalindrome.setOnClickListener(this);
+        btnAutoMorphic.setOnClickListener(this);
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        int r,sum=0,temp;
+        int a,s,c=1;
         int number = Integer.parseInt(etNumber.getText().toString());
 
-        temp=number;
-        while(number>0){
-            r=number%10;  //getting remainder
-            sum=(sum*10)+r;
-            number=number/10;
-        }
-        if(temp==sum)
+        a=number;
 
-            tvResult.setText("The Number is Palindrome");
+        s=number*number;
+
+        while (number!=0)
+
+        {
+
+            c=c*10;
+
+            number=number/10;
+
+        }
+
+        if(s%c==a)
+            tvResult.setText("The Number is AutoMorphic");
 
         else
-            tvResult.setText("The Number is Not Palindrome");
+            tvResult.setText("The Number is Not AutoMorphic");
 
 
-    public palindromeFragment() {
-        // Required empty public constructor
     }
 }

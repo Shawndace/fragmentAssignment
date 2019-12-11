@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.automorphicFragment"
     android:orientation="vertical"
-    android:background="@drawable/bgC1">
+    android:background="@drawable/bgcolor">
 
     <EditText
         android:layout_width="match_parent"
