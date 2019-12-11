@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.simpleInterestFragment"
+    android:background="@drawable/bgC1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Priciple"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/etPrincipal"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Time"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/etTime"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Rate"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/etRate"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="#FFFFFF"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="20sp"
+        android:id="@+id/btnSimpleInterest"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResultSimpleIntrest"
+        android:background="#FFFFFF"
+        />
+
+</LinearLayout>

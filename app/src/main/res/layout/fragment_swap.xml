@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SwapFragment"
+    android:orientation="vertical"
+    android:background="@drawable/bgC1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/etFirst"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/etSecond"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swap"
+        android:textSize="20sp"
+        android:id="@+id/btnSwapping"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"/>
+
+</LinearLayout>
