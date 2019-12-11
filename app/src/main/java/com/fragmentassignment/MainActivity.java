@@ -14,14 +14,10 @@ import com.fragmentassignment.Fragments.CircleFragment;
 import com.fragmentassignment.Fragments.PalindromeFragment;
 import com.fragmentassignment.Fragments.SimpleInterestFragment;
 import com.fragmentassignment.Fragments.SwapFragment;
-import com.fragmentassignment.Fragments.armstrongFragment;
-import com.fragmentassignment.Fragments.automorphicFragment;
-import com.fragmentassignment.Fragments.circleFragment;
-import com.fragmentassignment.Fragments.palindromeFragment;
-import com.fragmentassignment.Fragments.simpleInterestFragment;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnAreaofCircle,btnPalindrome,btnSimpleIntrest,btnArmstrong,
+    Button btnAreaofCircle, btnPalindrome, btnSimpleIntrest, btnArmstrong,
             btnAutomorphic, btnSwapping;
 
     @Override
@@ -55,39 +51,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnAreaofCircle:
 
                 CircleFragment areaofCircle = new CircleFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,areaofCircle);
+                fragmentTransaction.replace(R.id.fragmentContainer, areaofCircle);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnPalindrome:
 
                 PalindromeFragment palindrome = new PalindromeFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,palindrome);
+                fragmentTransaction.replace(R.id.fragmentContainer, palindrome);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnSimpleInterest:
 
                 SimpleInterestFragment simpleInterest = new SimpleInterestFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,simpleInterest);
+                fragmentTransaction.replace(R.id.fragmentContainer, simpleInterest);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnArmstrong:
 
                 ArmstrongFragment armstrong = new ArmstrongFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,armstrong);
+                fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnAutoMorphic:
 
                 AutomorphicFragment automorphic = new AutomorphicFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,automorphic);
+                fragmentTransaction.replace(R.id.fragmentContainer, automorphic);
                 fragmentTransaction.commit();
                 break;
             case R.id.btnSwapping:
 
                 SwapFragment swapping = new SwapFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,swapping);
+                fragmentTransaction.replace(R.id.fragmentContainer, swapping);
                 fragmentTransaction.commit();
                 break;
 
+        }
     }
 }

@@ -45,24 +45,20 @@ public class PalindromeFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        int r,sum=0,temp;
+        int r, sum = 0, temp;
         int number = Integer.parseInt(etNumber.getText().toString());
 
-        temp=number;
-        while(number>0){
-            r=number%10;  //getting remainder
-            sum=(sum*10)+r;
-            number=number/10;
+        temp = number;
+        while (number > 0) {
+            r = number % 10;  //getting remainder
+            sum = (sum * 10) + r;
+            number = number / 10;
         }
-        if(temp==sum)
+        if (temp == sum)
 
             tvResult.setText("The Number is Palindrome");
 
         else
             tvResult.setText("The Number is Not Palindrome");
-
-
-    public palindromeFragment() {
-        // Required empty public constructor
     }
 }
